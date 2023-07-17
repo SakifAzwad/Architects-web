@@ -1,0 +1,25 @@
+.P1
+{
+    display: flex;
+    color: var(--dark-01, #131313);
+text-align: center;
+font-family: 'Lato', sans-serif;
+font-size: 45px;
+font-style: normal;
+font-weight: 700;
+float: left;
+line-height: normal;
+align-items: center;
+}
+.P2
+{
+    float: right;
+}
+.P2 li
+{
+    display: flex;
+    list-style: none;
+    flex-direction: row-reverse;
+    float: right;
+    
+}
