@@ -89,8 +89,8 @@ nav a{
 
 main
 {
-    max-width: 1440px;
-    margin: 0 auto;
+    max-width: 1400px;
+    margin: 70px auto;
 }
 
 .team-container
@@ -98,8 +98,14 @@ main
     display: flex;
     align-items: center;
 }
+.im1
+{
+    height: 200px;
+    width: 200px;
+}
 .I2
 {
+    margin-left: 200px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 1.5rem;
@@ -113,6 +119,7 @@ main
 .aa1
 {
     font-size: 2.8rem;
+    padding-bottom: 20px;
 }
 .Quick
 {
@@ -128,6 +135,14 @@ main
 {
     color: #FF900E;
     font-weight: 700;
+    
+}
+.para1
+{
+    padding-bottom: 20px;
+    color: #727272;
+    font-weight: 400;
+    
 }
 @media screen and (max-width:576px) {
 
@@ -139,11 +154,39 @@ main
     {
         display: block;
     }
+    .team-container
+    {
+        flex-direction: column;
+    }
+    .I2{
+        margin-left: 0px;
+        grid-template-columns: 1fr;
+    }
+    .im1
+{
+    height: 200px;
+    width: 100%;
+}
     
 }
 
 @media screen and (min-width:576px) and (max-width: 960px) {
-    nav {
+    nav{
         padding: 50px;
     }
+    .team-container
+    {
+        flex-direction: column;
+    }
+    .I2{
+        margin-left: 0px;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .im1
+    {
+        height: 100%;
+        width: 100%;
+    }
+    
+
 }
